@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(232, 246, 255);
+  background-color: rgb(240, 235, 235);
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   margin-top: 56px;
   display: flex;
@@ -12,17 +12,18 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background: #428fbb;
+  background: white;
   height: 56px;
   /* padding-left: 15px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 5px solid black;
 }
 
 #header span {
   font-size: 24px;
-  color: white;
+  color: black;
   padding-right: 15px;
 }
 
@@ -32,8 +33,8 @@ body {
 
 
 #container {
-  background-color: #428fbb;
-  box-shadow: 2px 2px 5px#000;
+  background-color: rgb(30, 29, 29);
+  box-shadow: 5px 15px 10px black;
   width: 50%;
   min-width: 700px;
   border-radius: 5px;
@@ -59,13 +60,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
+  width: 150px;
   margin-left: 10px;
   border-radius: 4px;
   cursor: pointer;
-  height: 35px;
-  background: #0160A2;
-  color: #FFF;
+  height: 40px;
+  background: white;
+  color: black;
   font-size: 20px;
 }
 

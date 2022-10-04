@@ -6,22 +6,26 @@ import SearchBar from './components/SearchBar.jsx';
 import data, { Cairns } from './data.js';
 
 function App() {
+  
+  
   return (
     <div className="App">
-      <div>
+      <div className='card'>
         <Card
           max={Cairns.main.temp_max}
           min={Cairns.main.temp_min}
           name={Cairns.name}
           img={Cairns.weather[0].icon}
-          onClose={() => alert(Cairns.name)}
+          onClose={()=>alert('Son cositas')}
         />
       </div>
       <hr />
-      <div>
+      < div id='cards'>
+        
         <Cards
           cities={data}
         />
+      
       </div>
       <hr />
       <div>

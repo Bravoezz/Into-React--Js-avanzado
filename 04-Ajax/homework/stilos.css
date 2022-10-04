@@ -1,0 +1,15 @@
+html,body{
+    font-family: Lato, Verdana, sans-serif;
+
+}
+.css{
+    border:solid 4px black;
+    border-radius: 10px;
+    margin: 7px;
+    
+    
+}
+#lista{
+    width: 200px;
+    margin: 24px 5px;
+}

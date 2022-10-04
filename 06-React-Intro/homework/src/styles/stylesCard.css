@@ -1,0 +1,35 @@
+.cositas{
+    width: 350px;
+    height: 280px;
+    background-color: white;
+    margin: 5px 5px;
+    padding: 5px;
+    border-radius: 10px;
+    border: solid 1px rgb(172, 160, 160);
+    box-shadow: 5px 5px 2px gray;
+    display: block;
+
+}
+
+.boton {
+    width: 50px;
+    height: 30px;
+    margin-left: 80%;  
+    
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: solid 0.5px #998f8e;
+    
+}
+.contenedor{
+    align-items: center;
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 50% 50%;
+}
+#id{
+    padding: 20%;
+    font-size: 20px;
+   
+
+}

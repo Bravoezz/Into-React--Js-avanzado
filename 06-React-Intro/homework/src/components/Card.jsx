@@ -1,28 +1,26 @@
 import React from 'react';
 import '../styles/stylesCard.css'
 
-export default function Card({max,min,name,img,onClose}) {
+export default function Card({max,min,name,img,onClose,id}) {
   // acá va tu código
   return (
   <div className='cositas'>
-    <button className='boton' onClick={onClose}>x</button>
+    <div className='parte1'>
     <h2 className='h2'>{name}</h2>
-    <div className='contenedor'>
-      <div id='id'>
-        <table >
-          <tr>
-            <td onClick={onClose}>Min</td>
-            <td>Max</td>
-          </tr>
-            <td>{min}</td>
-            <td>{max}</td>
-        </table>
-      </div>
-      <div>
-        <img src={`http://openweathermap.org/img/wn/${img}@2x.png`} alt="cosas" />
-      </div>
+    <div className='contentBoton'>
+    <button className='boton' onClick={()=>onClose(id)}>x</button></div>
     </div>
-    
+    <div className='content'>
+    <div className='MinMax'>
+    <h4 >Min</h4>
+    <h5>{Math.trunc(min)}</h5>
+    <h4>Max</h4>
+    <h5>{Math.trunc(max)}</h5>
+    </div>
+    <div className='contentImg'>
+      <img className='img' src={`http://openweathermap.org/img/wn/${img}@2x.png`} alt="cosas" />
+    </div>
+    </div>
   </div>
   
     )

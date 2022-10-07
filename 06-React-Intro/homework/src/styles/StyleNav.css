@@ -1,0 +1,52 @@
+.imgDeadpool{
+    height: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+.div{
+    display: flex;
+    justify-content: space-between;
+}
+.titulo{
+  
+  margin-top: 10px;
+}
+
+.nav{
+    background-color: rgba(206, 201, 201, 0.25);
+    backdrop-filter: blur(12px) saturate(100%);
+    color: white;
+    z-index: 99;
+    display: flex;
+    border-radius: 25px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    height: 80px;
+    padding: 10px;
+    position: fixed;
+    height: 90px
+  }
+  @media screen and (max-width: 767px) {
+    .nav{
+      width: 400px;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .titulo{
+      font-size: 20px;
+    }
+    .div2{
+      display: flex;
+      align-items: center;
+    }
+    .div{
+      display: flex;
+      align-items: center;
+    }
+  }

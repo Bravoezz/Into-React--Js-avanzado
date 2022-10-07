@@ -1,34 +1,21 @@
 .App {
   text-align: center;
+ 
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contain-cards{
+  height: 1000px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.nada{
+  height: 100px;
+}
+@media screen and (max-width: 767px) {
+  .nada{
+    height: 180px;
+  }
 }
 
-.App-link {
-  color: #61dafb;
-}
 
 
-
-.card{
-  margin: auto auto;
-  display: inline-block;
-}
-#cards{
-  display: inline-block;  
-}

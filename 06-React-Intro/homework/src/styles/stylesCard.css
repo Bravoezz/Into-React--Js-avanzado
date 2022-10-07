@@ -3,7 +3,6 @@
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
-  
    
 }
 
@@ -39,6 +38,21 @@
     display: flex;
     justify-content: flex-end;
 }
+.navlink:active, .navlink:visited,.navlink:link{
+    text-decoration: none;
+    outline: none;
+    
+   }
+.navlink:hover{
+    color: rgb(74, 67, 67);
+  }
+.navlink{
+    color: black;
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 100px;
+}
 .boton {
     height: 40px;
     width: 40px;
@@ -49,9 +63,9 @@
     color: #0e0f0f;
     border: none;
     border-radius: 50%;
-    background: linear-gradient(315deg, #a29696, #887e7e);
-    box-shadow:  -8px -8px 16px #655e5e,
-                 8px 8px 16px #c9baba;
+background: #978c8c;
+box-shadow: inset 5px 5px 6px #7a7171,
+            inset -5px -5px 6px #b4a7a7;
     padding: 0;
 }
 .content{

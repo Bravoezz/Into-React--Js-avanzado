@@ -1,3 +1,28 @@
+.home:active, .home:visited,.home:link{
+ text-decoration: none;
+ outline: none;
+ 
+}
+.home:hover{
+  color: black;
+}
+.activee{
+  font-size: 20;
+  color: black;
+}
+.content-home-about{
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.home{
+  font-size: 17px;
+  color: rgb(250, 247, 247);
+  font-weight: bold;
+  width: 50%;
+}
+
+
 .imgDeadpool{
     height: 70px;
     margin-left: 20px;
@@ -13,7 +38,7 @@
 }
 
 .nav{
-    background-color: rgba(206, 201, 201, 0.25);
+    background-color: rgba(206, 201, 201, 0.0.5);
     backdrop-filter: blur(12px) saturate(100%);
     color: white;
     z-index: 99;

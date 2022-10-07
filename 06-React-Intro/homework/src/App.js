@@ -3,8 +3,19 @@ import './App.css';
 import axios from "axios"
 import Cards from './components/Cards.jsx';
 import Nav from './components/Nav';
+import About from './components/About';
+import {Route} from "react-router-dom";
+import Ciudad from './components/Ciudad';
 
 function App() {
+  function onFilter(ciudadId) {
+    let ciudad = citis.filter(c => c.id === parseInt(ciudadId));
+    if(ciudad.length > 0) {
+        return ciudad[0];
+    } else {
+        return null;
+    }}
+
   function onClose(id) {
     setCitis(oldCities => oldCities.filter(c => c.id !== id));
   }
@@ -24,11 +35,28 @@ function App() {
   }
   
   return (
+
     <div className="App">
-      <Nav onSearch={onSearch}/>
+      <Route
+      path='/'
+      render={() => <Nav onSearch={onSearch} />}
+      />
+
       <div className='nada'></div>
+      <Route
+      exact path='/about'
+       render={()=><About />}
+        />
       <div className='contain-cards'>
-      <Cards cities={citis} onClose={onClose}/></div>
+      <Route 
+      exact path='/'
+      render={() => <Cards cities={citis} onClose={onClose} />}   
+      />
+      </div>
+      <Route
+       exact path='/ciudad/:ciudadId'
+      render={({match}) => <Ciudad city={onFilter(match.params.ciudadId)}/>}
+      />
     </div>
   );
 }
